@@ -25,7 +25,7 @@ module.exports = {
         extensions: [".tsx", ".ts"]
     },
     externals: {
-        react: 'react',
+        'react': 'react',
         'react-dom': 'react-dom',
     },
     optimization: {
