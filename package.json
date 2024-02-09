@@ -1,6 +1,6 @@
 {
   "name": "ui-lib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index",
   "types": "dist/index",
   "license": "MIT",
@@ -13,6 +13,8 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@types/react": "^17.0.0",
     "babel-loader": "^8.2.2",
     "clsx": "^2.1.0",
