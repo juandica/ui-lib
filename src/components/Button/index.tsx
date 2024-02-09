@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 import clsx from 'clsx';
+import './Button.scss';
 
 export interface ButtonPropsBase {
   /** The color scheme for the button */

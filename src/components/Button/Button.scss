@@ -1,0 +1,108 @@
+@import '../Themes/palette.scss';
+
+.base-button {
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  text-decoration: none;
+  outline: 0;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    filter: brightness(90%);
+    text-decoration: none;
+  }
+
+  &:active {
+    filter: brightness(80%);
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  &.content {
+    width: auto;
+  }
+  &.medium {
+    font-size: 13px;
+    padding: 4px 25px;
+  }
+  &.large {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+  &.primary {
+    background: $curiousBlue;
+    border-color: $lochmara;
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+  &.white {
+    background: $whiteSmoke;
+    border-color: $gainsboro;
+    color: $matterhorn;
+    &:hover {
+      color: $matterhorn;
+    }
+  }
+  &.defenders {
+    background: $white;
+    border-color: $curiousBlue;
+    color: $curiousBlue;
+    &:hover {
+      color: $curiousBlue;
+    }
+  }
+  &.secondary {
+    background: $whisper;
+    border-color: $gainsboro;
+    color: $matterhorn;
+    &:hover {
+      color: $matterhorn;
+    }
+  }
+  &.tertiary {
+    background: transparent;
+    border-color: transparent;
+    color: $curiousBlue;
+    &:hover {
+      background: $whiteSmoke;
+    }
+  }
+  &.error {
+    background: $cinnabar;
+    border-color: $cinnabar;
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+  &.left {
+    border-radius: 4px 0 0 4px;
+
+    &:hover {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &.right {
+    border-radius: 0 4px 4px 0;
+    margin: 0 0 0 -1px;
+
+    &:hover {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &.narrow {
+    padding: 4px 10px;
+  }
+}
