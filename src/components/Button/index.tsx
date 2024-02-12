@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 import clsx from 'clsx';
-import './Button.scss';
+import { ButtonStyled } from './style';
 
 export interface ButtonPropsBase {
   /** The color scheme for the button */
@@ -84,7 +84,7 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   return (
-    <button
+    <ButtonStyled
       type="button"
       ref={buttonRef}
       className={classNames}
@@ -93,7 +93,7 @@ export const Button: React.FC<ButtonProps> = ({
       {...props}
     >
       {children}
-    </button>
+    </ButtonStyled>
   );
 };
 

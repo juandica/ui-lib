@@ -11,14 +11,12 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.css$/i,
                 use: [
                     // Creates `style` nodes from JS strings
                     "style-loader",
                     // Translates CSS into CommonJS
-                    "css-loader",
-                    // Compiles Sass to CSS
-                    "sass-loader",
+                    "css-loader"
                 ],
             },
             {
@@ -32,8 +30,18 @@ module.exports = {
         extensions: [".tsx", ".ts"]
     },
     externals: {
-        'react': 'react',
-        'react-dom': 'react-dom',
+        react: {
+            commonjs: 'react',
+            commonjs2: 'react',
+            amd: 'react',
+            root: 'React'
+        },
+        'react-dom': {
+            commonjs: 'react-dom',
+            commonjs2: 'react-dom',
+            amd: 'react-dom',
+            root: 'ReactDOM'
+        }
     },
     optimization: {
         minimize: false,
