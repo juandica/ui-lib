@@ -13,9 +13,16 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "@ciscodesignsystems/cds-component-types": "^1.1.0",
+    "@ciscodesignsystems/cds-component-utilities": "^1.1.1",
+    "@ciscodesignsystems/cds-magnetic-theme-web": "^1.1.0",
+    "@ciscodesignsystems/cds-react-button": "^1.1.0",
+    "@ciscodesignsystems/cds-react-icons": "^1.1.0",
+    "@ciscodesignsystems/cds-react-spinner": "^1.1.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@types/react": "^17.0.0",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
     "babel-loader": "^8.2.2",
     "clsx": "^2.1.0",
     "css-loader": "^5.0.1",
@@ -29,11 +36,14 @@
   },
   "peerDependencies": {
     "clsx": "2.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "files": [
     "dist"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
